@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-family: 'Kumbh Sans', sans-serif !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,17 +20,303 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Kumbh Sans', sans-serif !important;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+@layer components {
+  .caption {
+    @apply font-['kumbh_Sans'] font-[900] text-[1.25rem] leading-[1.6rem] ;
+  }
+  .inset {
+    @apply shadow-[inset_10px_10px_20px_0px_#D3E7F6,inset_-10px_-10px_20px_0px_#FFFFFF];
+  }
+  .ds {
+    @apply shadow-[10px_10px_20px_0px_#D3E7F6,-10px_-10px_20px_0px_#FFFFFF];
+  }
+}
+
+@layer base {
+  @screen mbvs {
+    html {
+      font-size: 62%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs1 {
+    html {
+      font-size: 65%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs2 {
+    html {
+      font-size: 67%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs3 {
+    html {
+      font-size: 70%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs4 {
+    html {
+      font-size: 72%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs5 {
+    html {
+      font-size: 74%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs {
+    html {
+      font-size: 75%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs1 {
+    html {
+      font-size: 78%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs2 {
+    html {
+      font-size: 80%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs3 {
+    html {
+      font-size: 82%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm {
+    html {
+      font-size: 84%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm1 {
+    html {
+      font-size: 87%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm2 {
+    html {
+      font-size: 89%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm3 {
+    html {
+      font-size: 91%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm4 {
+    html {
+      font-size: 94%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm5 {
+    html {
+      font-size: 97%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl {
+    html {
+      font-size: 100%; 
+    }
+  }
+
+  @screen mbl1 {
+    html {
+      font-size: 104%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl2 {
+    html {
+      font-size: 108%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl3 {
+    html {
+      font-size: 112%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl4 {
+    html {
+      font-size: 116%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl5 {
+    html {
+      font-size: 122%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl6 {
+    html {
+      font-size: 126%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl7 {
+    html {
+      font-size: 133%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl8 {
+    html {
+      font-size: 137%; 
+    }
+  }
+    @screen mbl9 {
+    html {
+      font-size: 141%; 
+    }
+  }
+    @screen mbl10 {
+    html {
+      font-size: 147%; 
+    }
+  }
+  @screen t {
+    html {
+      font-size: 150%; /* Makes 1rem =  */
+    }
+  }
+  @screen t1 {
+    html {
+      font-size: 154%; /* Makes 1rem =  */
+    }
+  }
+  @screen t2 {
+    html {
+      font-size: 158%; /* Makes 1rem =  */
+    }
+  }
+  @screen t3 {
+    html {
+      font-size: 162%; 
+    }
+  }
+
+  @screen t4 {
+    html {
+      font-size: 167%; /* Makes 1rem =  */
+    }
+  }
+  @screen t5 {
+    html {
+      font-size: 171%; 
+    }
+  }
+    @screen t6 {
+    html {
+      font-size: 176%; 
+    }
+  }
+
+  @screen t7 {
+    html {
+      font-size: 180%; /* Makes 1rem =  */
+    }
+  }
+  @screen t8 {
+    html {
+      font-size: 184%; 
+    }
+  }
+    @screen t9 {
+    html {
+      font-size: 188%; /* Makes 1rem =  */
+    }
+  }
+  @screen t10 {
+    html {
+      font-size: 193%; 
+    }
+  }
+  @screen t11 {
+    html {
+      font-size: 200%; /* Makes 1rem =  */
+    }
+  }
+  @screen t12 {
+    html {
+      font-size: 206%; 
+    }
+  }
+  @screen t13 {
+    html {
+      font-size: 208%; /* Makes 1rem =  */
+    }
+  }
+  @screen t14 {
+    html {
+      font-size: 210%; 
+    }
+  }
+  @screen t15 {
+    html {
+      font-size: 212%; /* Makes 1rem =  */
+    }
+  }
+  @screen t16 {
+    html {
+      font-size: 214%; 
+    }
+  }
+  @screen t17 {
+    html {
+      font-size: 216%; /* Makes 1rem =  */
+    }
+  }
+  @screen d1 {
+    html {
+      font-size: 220%; 
+    }
+  }
+  @screen d2 {
+    html {
+      font-size: 222%; /* Makes 1rem =  */
+    }
+  }
+  @screen d3 {
+    html {
+      font-size: 224%; 
+    }
+  }
+  @screen d4 {
+    html {
+      font-size: 226%; /* Makes 1rem =  */
+    }
+  }
+  @screen d5 {
+    html {
+      font-size: 228%; 
+    }
+  }
+  @screen d6 {
+    html {
+      font-size: 230%; /* Makes 1rem =  */
+    }
+  }
+  @screen d7 {
+    html {
+      font-size: 232%; 
+    }
+  }
+  @screen d8 {
+    html {
+      font-size: 234%; /* Makes 1rem =  */
+    }
+  }
+  @screen d9 {
+    html {
+      font-size: 236%; 
+    }
+  }
+  @screen d10 {
+    html {
+      font-size: 240%; /* Makes 1rem =  */
+    }
   }
 }

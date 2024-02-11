@@ -1,0 +1,243 @@
+
+// Define variables
+$primary-color: #FF8412
+$secondary-color: #151142
+$white-color: #fff
+$text-primary-color: #2B275A
+
+body
+    // background-color: $secondary-color
+    // color: $secondary-color
+    font-size: 0.276rem
+    height: 300vh
+    &::-webkit-scrollbar
+        width: 0rem
+    &::-webkit-scrollbar-thumb
+        background-color: $primary-color
+        border-radius: 1rem
+main
+    background-color: $secondary-color
+    height: 100vh
+    position: relative
+    overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    .background-image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        top: 0
+        left: 0
+        mix-blend-mode: multiply
+        opacity: .5
+    &::before,&::after
+        content: ''
+        display: block
+        position: absolute
+        width: 15rem
+        height: 15rem
+        background-color: $primary-color
+        border-radius: 50%
+        opacity: .8
+        filter: blur(400px)
+        z-index: 1
+    &::before
+        top: -10rem
+        left: -10rem
+    &::after
+        bottom: -10rem
+        right: -10rem
+
+    //home-frame-one
+    .home-frame-one
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $white-color
+        border-radius: 0 0 4rem 4rem
+        padding-inline: 2rem
+        z-index: 2
+        // transition: all .3s ease
+
+        nav
+            display: flex
+            justify-content: space-between
+            align-items: center
+            color: $text-primary-color
+            padding-block: 0.5rem
+            .nav-logo
+                width: 4rem
+                object-fit: cover
+            ul
+                display: flex
+                list-style: none
+                align-items: center
+                column-gap: 1rem
+                li
+                    text-transform: uppercase
+                    font-weight: 700
+                    font-size: 0.3rem
+                li.nav-btn
+                    background-color: transparent
+                    padding: .2rem 0.5rem
+                    border-radius: 2rem
+                    color: $primary-color
+                    border: 2px solid $primary-color
+                    transition: all .3s ease-in-out
+                    cursor: pointer
+                    &:hover
+                        background-color: $primary-color
+                        color: $white-color
+
+        .hero
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            
+            font-weight: 700
+            .hero-title
+                font-size: 1.4rem
+                font-weight: 800
+                text-align: center
+                margin-block: .5rem
+                margin-bottom: 0
+                line-height: 1
+                text-transform: uppercase
+                color: $text-primary-color
+            .hero-subtitle
+                font-size: 1.5rem
+                font-weight: 400
+                text-align: center
+                margin-block: 2rem
+            .hero-cta
+                background-color: $primary-color
+                padding: .2rem .5rem
+                text-transform: uppercase
+                border-radius: 2rem
+                color: $white-color
+                border: 1px solid $primary-color
+                transition: all .3s ease-in-out
+                cursor: pointer
+                font-size: 0.3rem
+                text-transform: uppercase
+                &:hover
+                    background-color: $white-color
+                    color: $primary-color
+                    border: 1px solid $primary-color
+                    transition: all .3s ease-in-out
+                    cursor: pointer
+            .underline
+                width: 4rem
+                margin-inline: auto
+                margin-left: calc(50% + 1.4rem)
+                margin-top: 5px
+
+    .home-frame-two
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+
+        .colored-half-circle
+            position: absolute
+            width: 21rem
+            aspect-ratio: 1/1
+            background: $primary-color
+            border-radius: 50%
+            z-index: 5
+            left: 50%
+            bottom: -70%
+            transition: all .1s ease
+            transform: translateX(-50%)
+            .women-img
+                position: absolute
+                width: 13rem
+                top: 18%
+                left: 50%
+                translate: -50% -50%
+                transition: all .1s ease
+            .mobile-mock-group
+                position: relative
+                top: 2.1%
+                // top: 15%
+                // scale: 0.255
+                left: 21.5%
+                z-index: 10
+                // rotate: -5deg
+                transform: scale(0.255) rotate(-5deg)
+
+                .mobile-mock
+                    position: absolute
+                    left: 50%
+                    
+                    translate: -50% 0%
+                    &:nth-of-type(1)
+                        // left: 32%
+                        left: 50%
+                        top: -10px
+                        width: 13.4rem
+                        rotate: 15deg
+                    &:nth-of-type(2)
+                        // left: 68%
+                        left: 50%
+                        top: -10px
+                        width: 13.4rem
+                        rotate: -15deg
+                    &:nth-of-type(3)
+                        width: 7.5rem
+        .floating-info-block 
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0    
+            z-index: 6         
+            .floating-info
+                position: absolute
+                z-index: 4
+                transition: all .1s ease
+                &:nth-of-type(1)
+                    top: 1.5rem
+                    left: 0
+                    transform : translateX(-100%)
+                &:nth-of-type(2)
+                    top: auto
+                    left: 0
+                    bottom: 1.5rem
+                    transform : translateX(-100%)
+                &:nth-of-type(3)
+                    top: 1.5rem
+                    right: 0
+                    transform : translateX(100%)
+                &:nth-of-type(4)
+                    right: 0%
+                    transform : translateX(100%)
+                    bottom: 1.5rem
+                        
+    .home-frame-three
+        position: absolute
+        background : white
+        z-index: 4
+        top: 20%
+        left: 0
+        right: 0
+        bottom: 0 
+        transform: translateY(120%)
+        border-radius: 4rem 4rem 0 0
+        padding-inline: 2rem
+
+        .guy
+            position: absolute
+            z-index: 6    
+
+            
+                
+            
